@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>TITOLO</h1>
+        <h1>MyAlbum</h1>
     </header>
 
     <main>
@@ -24,19 +26,19 @@
 
 
             <div class="image">
-                <img class="" src="assets/img/img_1.jpg" alt="img1">
+                <img class="active dis_none first" src="assets/img/img_1.jpg" alt="img1">
                 <img class="dis_none" src="assets/img/img_2.jpg" alt="img2">
                 <img class="dis_none" src="assets/img/img_3.jpg" alt="img3">
-                <img class="dis_none" src="assets/img/img_4.jpg" alt="img4">
+                <img class="dis_none last" src="assets/img/img_4.jpg" alt="img4">
             </div>
 
 
 
             <div class="select-img">
+                <i class="fas fa-circle active first"></i>
                 <i class="fas fa-circle"></i>
                 <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle last"></i>
             </div>
 
         </div>
@@ -53,6 +55,7 @@
     <footer>
         
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

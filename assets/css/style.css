@@ -14,7 +14,7 @@ header{
     margin-bottom: 50px;
 }
 header h1{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 main{
@@ -32,11 +32,17 @@ main{
     position: relative;
 }
 
-.image img{
+.image > img{
    width: 100%;
+   display: none;
+}
+.image > img.active{
+    display: inline-block;
 }
 
-
+body{
+    font-family: 'Orelega One', cursive;
+}
 
 .select-img{
     display: flex;
@@ -51,10 +57,13 @@ main{
     left: 50%;
     transform: translatex(-50%);
 }
-.select-img i{
+.select-img > i{
     color: rgba(999, 999, 999, 0.5);
     font-size: 15px;
     cursor: pointer;
+}
+.select-img > i.active{
+    color: white;  
 }
 
 
@@ -82,10 +91,4 @@ main{
     font-size: 40px;
     cursor: pointer;
 }
-.active{
-    display: inline-block;
-}
 
-.dis_none{
-    display: none;
-}
